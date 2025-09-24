@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            padding: 1.5rem;
+            background: #222;
+            color: #fff;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+        }
+
+        .gallery div {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery img {
+            width: 100%;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery div:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery span {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 0.5rem;
+            text-align: center;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery div:hover span {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Image Gallery</h1>
+        <nav>
+            <a href="portfolio.html" style="color:#ff9800; text-decoration:none;">Portfolio</a> |
+            <a href="gallery.html" style="color:#fff; text-decoration:none;">Gallery</a>
+        </nav>
+    </header>
+
+    <section class="gallery">
+        <div><img src="https://picsum.photos/id/1015/400/250" alt="Nature"><span>Caption 1</span></div>
+        <div><img src="https://picsum.photos/id/1025/400/250" alt="Dog"><span>Caption 2</span></div>
+        <div><img src="https://picsum.photos/id/1003/400/250" alt="Mountain"><span>Caption 3</span></div>
+        <div><img src="https://picsum.photos/id/1011/400/250" alt="River"><span>Caption 4</span></div>
+        <div><img src="https://picsum.photos/id/1016/400/250" alt="Forest"><span>Caption 5</span></div>
+        <div><img src="https://picsum.photos/id/1018/400/250" alt="Bridge"><span>Caption 6</span></div>
+        <div><img src="https://picsum.photos/id/1024/400/250" alt="Cat"><span>Caption 7</span></div>
+        <div><img src="https://picsum.photos/id/1021/400/250" alt="City"><span>Caption 8</span></div>
+        <div><img src="https://picsum.photos/id/1022/400/250" alt="Night"><span>Caption 9</span></div>
+    </section>
+</body>
+
+</html>

@@ -4,101 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment #3 - Advanced CSS</title>
+    <title>My Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Навигация -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
 
-    <!-- Part 1: Flexbox Navigation Bar -->
-    <header class="navbar">
-        <div class="logo">MyLogo</div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Главный блок -->
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>Hello! I'm a developer/designer. Here you can see my projects and gallery.</p>
+        <a href="portfolio.html" class="btn">See Portfolio</a>
+        <a href="gallery.html" class="btn">See Gallery</a>
     </header>
 
-    <!-- Part 1: Flexbox Cards -->
-    <section class="card-row">
-        <div class="card">
-            <img src="https://via.placeholder.com/300x150" alt="img">
-            <h3>Card Title 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <button>Read More</button>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/300x150" alt="img">
-            <h3>Card Title 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <button>Read More</button>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/300x150" alt="img">
-            <h3>Card Title 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <button>Read More</button>
-        </div>
-    </section>
-
-    <!-- Part 2: Grid Layout -->
-    <section class="grid-layout">
-        <header class="grid-header">Header</header>
-        <aside class="grid-sidebar">Sidebar</aside>
-        <main class="grid-main">Main Content</main>
-        <footer class="grid-footer">Footer</footer>
-    </section>
-
-    <!-- Part 2: Image Gallery -->
-    <section class="gallery">
-        <div><img src="https://via.placeholder.com/200" alt="1"><span>Caption 1</span></div>
-        <div><img src="https://via.placeholder.com/200" alt="2"><span>Caption 2</span></div>
-        <div><img src="https://via.placeholder.com/200" alt="3"><span>Caption 3</span></div>
-        <div><img src="https://via.placeholder.com/200" alt="4"><span>Caption 4</span></div>
-        <div><img src="https://via.placeholder.com/200" alt="5"><span>Caption 5</span></div>
-        <div><img src="https://via.placeholder.com/200" alt="6"><span>Caption 6</span></div>
-        <div><img src="https://via.placeholder.com/200" alt="7"><span>Caption 7</span></div>
-        <div><img src="https://via.placeholder.com/200" alt="8"><span>Caption 8</span></div>
-        <div><img src="https://via.placeholder.com/200" alt="9"><span>Caption 9</span></div>
-    </section>
-
-    <!-- Part 3: Portfolio Page -->
-    <section class="portfolio">
-        <header class="portfolio-header">
-            <div class="logo">Portfolio</div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </header>
-
-        <div class="portfolio-grid">
-            <div class="projects">
-                <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>Description here...</p>
-                    <button>See More</button>
-                </div>
-                <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>Description here...</p>
-                    <button>See More</button>
-                </div>
-            </div>
-            <aside class="portfolio-sidebar">
-                <h3>About Me</h3>
-                <p>Short info goes here.</p>
-            </aside>
-        </div>
-
-        <footer class="portfolio-footer">© 2025 My Portfolio</footer>
-    </section>
-
+    <!-- Контакты -->
+    <footer>
+        <p>© 2025 My Portfolio Website | Contact: myemail@example.com</p>
+    </footer>
 </body>
 
 </html>
